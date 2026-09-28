@@ -1,0 +1,413 @@
+
+    /* CSS variables */
+       
+    :root {
+      --green: #22c55e;
+      --green-dark: #16a34a;
+      --navy: #0b1442;
+      --blue: #104BEB;
+      --black: #000000;
+      --dark-bg: #161616;
+      --text: #111111;
+      --text-muted: #555555;
+
+      --section-x: 5px;   /* left/right padding used everywhere */
+      --section-y: 56px;   /* top/bottom breathing room between sections */
+      --max-width: 640px;  /* keeps the page readable on big screens */
+    }
+
+
+    /* ==========================================================
+       RESET + BASE STYLES
+       ========================================================== */
+
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Poppins", Arial, Helvetica, sans-serif;
+      color: var(--text);
+      line-height: 1.55;
+      background: #ffffff;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    /* Conatiner */
+
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 var(--section-x);
+    }
+
+    section {
+      padding: var(--section-y) 0;
+    }
+
+
+    /* Reusable pieces */
+
+    .btn {
+      display: inline-block;
+      background-color: var(--blue);
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 16px;
+      text-decoration: none;
+      padding: 16px 30px;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+      margin-top: 28px;
+    }
+
+   
+
+    .section-title {
+      text-align: center;
+      font-size: clamp(22px, 4vw, 26px);
+      font-weight: 800;
+      margin-bottom: 44px;
+    }
+
+    /* Checklist */
+    .check-list {
+      list-style: none;
+    }
+
+    .check-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
+
+    .check-list li:last-child {
+      margin-bottom: 0;
+    }
+
+    .check-icon {
+      flex-shrink: 0;
+      margin-top: 3px;
+      color: var(--green);
+      font-weight: 700;
+    }
+
+
+    /* Header */
+
+    .header {
+      padding-top: 64px;
+    }
+
+    .header-top {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      margin-bottom: 64px;
+    }
+
+    .logo {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    .company-name {
+      font-size: clamp(18px, 4.5vw, 21px);
+      font-weight: 800;
+      text-transform: uppercase;
+      line-height: 1.35;
+    }
+
+    /* Location + WhatsApp */
+    
+    .info-block {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .info-icon {
+      margin-bottom: 16px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .info-text {
+      font-size: 18px;
+    }
+
+    .call-label {
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+
+
+    /* Message and Therapist */
+
+    .hero-inner {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .hero-heading {
+      font-size: clamp(30px, 6vw, 40px);
+      font-weight: 800;
+      line-height: 1.18;
+      flex: 1.2;
+    }
+
+    .hero-image {
+      flex: 1;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .hero-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      aspect-ratio: 4 / 4.2;
+    }
+
+
+    /* Services */
+
+    .services-columns {
+      display: flex;
+      justify-content: space-between;
+      gap: 32px;
+    }
+
+    .services-columns .check-list {
+      flex: 1;
+    }
+
+
+    /* Hours */
+
+    .hours-box {
+      background-color: var(--black);
+      color: #ffffff;
+      text-align: center;
+      padding: 40px 24px;
+      border-radius: 8px;
+      max-width: 420px;
+      margin: 0 auto;
+    }
+
+    .hours-box p {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    .hours-box p:last-child {
+      font-weight: 400;
+      font-size: 14px;
+      margin-bottom: 0;
+      color: #cccccc;
+    }
+
+
+    /* Appointment Plan */
+
+    .plan-heading {
+      text-align: center;
+      margin-bottom: 44px;
+    }
+
+    .plan-heading span {
+      display: block;
+      font-size: clamp(22px, 4vw, 26px);
+      font-weight: 800;
+    }
+
+    .plan-heading .accent {
+      color: var(--green);
+    }
+
+    .appointments-row {
+      display: flex;
+      gap: 28px;
+      margin-bottom: 44px;
+    }
+
+    .appointments-row:last-of-type {
+      margin-bottom: 0;
+    }
+
+    .appointment-card {
+      flex: 1;
+    }
+
+    /* The appointment plan */
+
+    .appointment-title {
+      display: flex;
+      margin-bottom: 26px;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .appointment-number {
+      background-color: var(--green);
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 17px;
+      width: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .appointment-label {
+      background-color: var(--navy);
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 12.5px;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+      padding: 10px 16px;
+      display: flex;
+      align-items: center;
+    }
+
+    .appointment-card .check-list li {
+      font-size: 15px;
+    }
+
+
+    /* Footer */
+
+    .footer {
+      background-color: var(--dark-bg);
+      color: #ffffff;
+      padding: 36px var(--section-x);
+      margin-top: 20px;
+    }
+
+    .footer-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .footer-left {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .footer-logo {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    .footer-name {
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+    }
+
+    .footer-right {
+      text-align: right;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 12px;
+      justify-content: flex-end;
+    }
+
+    .social-icons a {
+      display: inline-flex;
+    }
+
+    .footer-phone {
+      font-size: 14px;
+      color: #eaeaea;
+    }
+
+
+    /* Responsiveness */
+
+    @media (max-width: 520px) {
+      :root {
+        --section-x: 22px;
+        --section-y: 44px;
+      }
+
+      /* Message and therapist */
+
+      .hero-inner {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .hero-image {
+        max-width: 260px;
+        margin: 0 auto;
+      }
+
+      /* Services */
+
+      .services-columns {
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .services-columns .check-list {
+        margin-bottom: 8px;
+      }
+
+      /* Appointment */
+
+      .appointments-row {
+        flex-direction: column;
+        gap: 36px;
+      }
+
+      .footer-inner {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .footer-right {
+        text-align: center;
+      }
+
+      .social-icons {
+        justify-content: center;
+      }
+    }
+
+
+    /* Accessibility */
+
+    a:focus-visible,
+    button:focus-visible {
+      outline: 3px solid var(--green);
+      outline-offset: 2px;
+    }
+  
