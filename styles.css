@@ -33,6 +33,12 @@ img {
   margin: 0 auto;
 }
 
+@media (max-width: 780px) {
+  .container {
+    width: min(1180px, calc(100% - 30px));
+  }
+}
+
 .topbar {
   padding-top: 26px;
   display: flex;
@@ -346,34 +352,133 @@ img {
 @media (max-width: 780px) {
   .topbar {
     flex-direction: column;
-    gap: 20px;
+    gap: 18px;
+    padding-top: 20px;
+  }
+
+  .brand img {
+    width: 150px;
   }
 
   .nav {
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 12px 18px;
+  }
+
+  .nav a {
+    font-size: 0.82rem;
+  }
+
+  .hero {
+    margin-top: 42px;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.3rem, 10vw, 3.3rem);
   }
 
   .proof-grid {
     grid-template-columns: 1fr;
-    width: 100%;
+    width: min(100%, 360px);
+    gap: 12px;
   }
 
   .proof-item {
-    border-right: none;
-    border-bottom: 1px solid var(--line);
+    width: 100%;
+    height: auto;
+    min-height: 62px;
+    border-right: 1px solid #c4c4c4;
+    border-left: 1px solid #c4c4c4;
   }
 
   .proof-item:last-child {
-    border-bottom: none;
+    border-bottom: 1px solid #c4c4c4;
+  }
+
+  .button {
+    width: min(100%, 260px);
+  }
+
+  .info-stack {
+    width: min(100%, 360px);
   }
 
   .footer-inner {
+    width: min(1030px, calc(100% - 28px));
     grid-template-columns: 1fr;
   }
 
   .footer-call {
     align-items: flex-start;
+  }
+
+  .footer-line,
+  .copyright {
+    width: min(1030px, calc(100% - 28px));
+  }
+}
+
+@media (max-width: 480px) {
+  .page {
+    padding-bottom: 52px;
+  }
+
+  .brand img {
+    width: 130px;
+  }
+
+  .nav {
+    gap: 10px 14px;
+  }
+
+  .nav a {
+    font-size: 0.74rem;
+  }
+
+  .page-header .kicker {
+    font-size: 0.9rem;
+  }
+
+  .page-header .subkicker {
+    font-size: 0.8rem;
+  }
+
+  .hero-copy {
+    font-size: 0.95rem;
+  }
+
+  .service-list {
+    font-size: 0.9rem;
+  }
+
+  .proof-item {
+    padding: 12px 14px;
+    font-size: 0.86rem;
+  }
+
+  .info-card,
+  .contact-card {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .info-card p,
+  .contact-card .contact-row {
+    font-size: 0.96rem;
+  }
+
+  .footer-brand .footer-logo {
+    width: 170px;
+  }
+
+  .footer-brand .subbrand {
+    font-size: 0.9rem;
+    letter-spacing: 0.03em;
+  }
+
+  .footer-links a,
+  .footer-call .phone {
+    font-size: 0.9rem;
   }
 }
