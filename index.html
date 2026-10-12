@@ -1,111 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Spes Center is a private therapy center in Kimisagara, Kigali, Rwanda.">
-  <title>Spes Center | Therapy and Support</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SPES Center | Private Therapy Center in Kigali</title>
+  <meta name="description" content="SPES Center is a private therapy center in Kimisagara, Kigali offering individual, couples and family therapy." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="page">
-    <header class="site-header">
-      <a class="brand" href="#home" aria-label="Spes Center home">
-        <img class="brand-logo" src="assets/logo.png" alt="Spes Center logo">
-        <span>SPES CENTER</span>
-      </a>
-      <a class="header-phone" href="tel:+250794948271">
-        <img src="assets/phone-call.png" alt="">
-        <span>+250 794948271</span>
-      </a>
-    </header>
 
-    <main id="home">
-      <section class="hero" aria-labelledby="hero-title">
-        <h1 id="hero-title">Your Journey<br>to Healing<br>Starts Here</h1>
-        <p>A private therapy center in kigali, kimisagara</p>
-      </section>
+  <!-- ============ HEADER ============ -->
+  <header class="header container">
+    <div class="brand">
+      <div class="brand__logo">
+        <!-- REPLACE: logo image -->
+        <img src="./Assets/logos and icons/logo.png" alt="SPES Center logo" />
+      </div>
+      <span class="brand__name">SPES CENTER</span>
+    </div>
 
-      <section class="location-card" aria-labelledby="location-title">
-        <h2 id="location-title">Find us</h2>
-        <p>Kimisagara near market.<br>Near montana bar and gas station.<br>Nyarugenge.<br>Kigali, Rwanda</p>
-      </section>
+    <a class="header__phone" href="tel:+250794948271">
+      <!-- REPLACE: phone icon -->
+      <img class="icon" src="./Assets/logos and icons/phone-call.png" alt="" aria-hidden="true" />
+      <span>+250 794948271</span>
+    </a>
+  </header>
 
-      <div class="primary-action">
-        <a class="call-button" href="tel:+250794948271">
-          <img src="assets/phone-call.png" alt="">
-          <span>Call us on phone</span>
-        </a>
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero container">
+      <h1 class="hero__title">Your Journey<br> to Healing<br> Starts Here</h1>
+      <p class="hero__subtitle">A private therapy center in kigali, kimisagara</p>
+    </section>
+
+    <!-- ============ FIND US ============ -->
+    <section class="find container">
+      <div class="card find__card">
+        <h2 class="card__heading">Find us</h2>
+        <address class="find__address">
+          Kimisagara near market.<br />
+          Near montana bar and gas station.<br />
+          Nyarugenge.<br />
+          Kigali, Rwanda
+        </address>
       </div>
 
-      <section class="services section" aria-labelledby="services-title">
-        <h2 id="services-title">Our services</h2>
-        <div class="service-grid">
-          <article class="service-card">
-            <h3>Individual Therapy</h3>
-            <p>Personalized support for<br class="desktop-break"> emotional well-being.</p>
-          </article>
-          <article class="service-card">
-            <h3>Couples Therapy</h3>
-            <p>Build stronger<br class="desktop-break"> relationships and better<br class="desktop-break"> communication.</p>
-          </article>
-          <article class="service-card family-card">
-            <h3>Family Therapy</h3>
-            <p>Strengthen family bonds<br class="desktop-break"> and resolve conflicts.</p>
-          </article>
-        </div>
-      </section>
+      <a class="btn" href="tel:+250794948271">
+        <!-- REPLACE: phone icon -->
+        <img class="icon" src="./Assets/logos and icons/phone-call.png" alt="" aria-hidden="true" />
+        <span>Call us on phone</span>
+      </a>
+    </section>
 
-      <section class="specialists section" aria-labelledby="specialists-title">
-        <h2 id="specialists-title">Our specialists</h2>
-        <div class="specialist">
-          <img class="specialist-photo" src="assets/specialist.jpg" alt="Therapy specialist wearing green clinical scrubs">
-          <div class="specialist-details">
-            <h3>Dr. Sarah Mitchell</h3>
-            <p>Clinical Psychologist</p>
-            <p>Monday - Friday</p>
-            <p>8:00 AM - 19:30 PM</p>
+    <!-- ============ SERVICES ============ -->
+    <section class="services container">
+      <h2 class="section-title">Our services</h2>
+
+      <div class="services__grid">
+        <article class="card service">
+          <h3 class="service__title">Individual Therapy</h3>
+          <p class="service__text">Personalized support for emotional well-being.</p>
+        </article>
+
+        <article class="card service">
+          <h3 class="service__title">Couples Therapy</h3>
+          <p class="service__text">Build stronger relationships and better communication.</p>
+        </article>
+
+        <article class="card service">
+          <h3 class="service__title">Family Therapy</h3>
+          <p class="service__text">Strengthen family bonds and resolve conflicts.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ SPECIALISTS ============ -->
+    <section class="specialists container">
+      <h2 class="section-title">Our specialists</h2>
+
+      <article class="specialist">
+        <div class="specialist__photo">
+          <!-- REPLACE: doctor photo -->
+          <img src="./Assets/images/doctor 1.jpg" alt="Dr. Sarah Mitchell" />
+        </div>
+        <div class="card specialist__info">
+          <h3 class="specialist__name">Dr. Sarah Mitchell</h3>
+          <p>Clinical Psychologist</p>
+          <p>Monday - Friday</p>
+          <p>8:00 AM - 19:30 PM</p>
+        </div>
+      </article>
+
+      <a class="btn" href="tel:+250794948271">
+        <!-- REPLACE: phone icon -->
+        <img class="icon" src="./Assets/logos and icons/phone-call.png" alt="" aria-hidden="true" />
+        <span>Call us on phone</span>
+      </a>
+    </section>
+
+    <!-- ============ HOURS ============ -->
+    <section class="hours container">
+      <h2 class="section-title">Hours</h2>
+
+      <div class="card hours__card">
+        <dl class="hours__list">
+          <div class="hours__row">
+            <dt>Monday - Friday:</dt>
+            <dd>8:00 AM - 19:30 PM</dd>
           </div>
-        </div>
-        <div class="specialist-action">
-          <a class="call-button" href="tel:+250794948271">
-            <img src="assets/phone-call.png" alt="">
-            <span>Call us on phone</span>
-          </a>
-        </div>
-      </section>
+          <div class="hours__row">
+            <dt>Saturday:</dt>
+            <dd>9:00 AM - 17:00 PM</dd>
+          </div>
+          <div class="hours__row">
+            <dt>Sunday:</dt>
+            <dd>Closed</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
 
-      <section class="hours-section section" aria-labelledby="hours-title">
-        <h2 id="hours-title">Hours</h2>
-        <div class="hours-card">
-          <div class="hours-row"><span>Monday - Friday:</span><span>8:00 AM - 19:30 PM</span></div>
-          <div class="hours-row"><span>Saturday:</span><span>9:00 AM - 17:00 PM</span></div>
-          <div class="hours-row"><span>Sunday:</span><span>Closed</span></div>
-        </div>
-      </section>
+    <!-- ============ CONTACT ============ -->
+    <section class="contact container">
+      <h2 class="section-title">Contact us</h2>
 
-      <section class="contact-section section" aria-labelledby="contact-title">
-        <h2 id="contact-title">Contact us</h2>
-        <div class="contact-card">
-          <a class="contact-row" href="tel:+250794948271">
-            <img src="assets/phone-call.png" alt="">
-            <span>+250 794948271</span>
-          </a>
-          <a class="contact-row" href="https://wa.me/250794948271" target="_blank" rel="noopener noreferrer">
-            <img src="assets/whatsapp.png" alt="">
-            <span>+250 794948271</span>
-          </a>
-          <a class="contact-row" href="mailto:spescenter@gmail.com">
-            <img src="assets/envelope.png" alt="">
-            <span>spescenter@gmail.com</span>
-          </a>
-        </div>
-      </section>
-    </main>
+      <div class="card contact__card">
+        <ul class="contact__list">
+          <li>
+            <a class="contact__item" href="tel:+250794948271">
+              <!-- REPLACE: phone icon -->
+              <img class="icon" src="./Assets/logos and icons/phone-call.png" alt="" aria-hidden="true" />
+              <span>+250 794948271</span>
+            </a>
+          </li>
+          <li>
+            <a class="contact__item" href="https://wa.me/250794948271">
+              <!-- REPLACE: whatsapp icon -->
+              <img class="icon" src="./Assets/logos and icons/whatsapp.png" alt="" aria-hidden="true" />
+              <span>+250 794948271</span>
+            </a>
+          </li>
+          <li>
+            <a class="contact__item" href="mailto:spescenter@gmail.com">
+              <!-- REPLACE: email icon -->
+              <img class="icon icon--plain" src="./Assets/logos and icons/envelope.png" alt="" aria-hidden="true" />
+              <span>spescenter@gmail.com</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
 
-    <footer class="site-footer">
-      <p>@2026spescenter</p>
-    </footer>
-  </div>
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <p>@2026spescenter</p>
+  </footer>
+
 </body>
 </html>
