@@ -1,128 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GTC Therapy Center</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header class="container topbar">
-      <div class="brand" aria-label="GTC homepage">
-        <img src="Assets/Logos/Logo_A.png" alt="GTC logo" />
-      </div>
-
-      <nav class="nav" aria-label="Main navigation">
-        <a href="#">Home</a>
-        <a href="#">Services</a>
-        <a href="#">Contact us</a>
-        <a href="#">About us</a>
-      </nav>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Spes Center is a private therapy center in Kimisagara, Kigali, Rwanda.">
+  <title>Spes Center | Therapy and Support</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Spes Center home">
+        <img class="brand-logo" src="assets/logo.png" alt="Spes Center logo">
+        <span>SPES CENTER</span>
+      </a>
+      <a class="header-phone" href="tel:+250794948271">
+        <img src="assets/phone-call.png" alt="">
+        <span>+250 794948271</span>
+      </a>
     </header>
 
-    <main class="container page">
-      <div class="page-header">
-        <div class="center-block">
-          <span class="kicker">GABA THERAPY CENTER</span>
-          <span class="subkicker">Private</span>
-        </div>
+    <main id="home">
+      <section class="hero" aria-labelledby="hero-title">
+        <h1 id="hero-title">Your Journey<br>to Healing<br>Starts Here</h1>
+        <p>A private therapy center in kigali, kimisagara</p>
+      </section>
+
+      <section class="location-card" aria-labelledby="location-title">
+        <h2 id="location-title">Find us</h2>
+        <p>Kimisagara near market.<br>Near montana bar and gas station.<br>Nyarugenge.<br>Kigali, Rwanda</p>
+      </section>
+
+      <div class="primary-action">
+        <a class="call-button" href="tel:+250794948271">
+          <img src="assets/phone-call.png" alt="">
+          <span>Call us on phone</span>
+        </a>
       </div>
 
-      <!-- Hero -->
-      <section class="hero" aria-label="Hero section">
-        <h1>
-          Your health,<br />
-          our<br />
-          compassionate<br />
-          care.
-        </h1>
-
-        <p class="hero-copy">
-          A private health therapy center for you,<br />
-          your friends and family.
-        </p>
-
-        <div class="service-list" aria-label="Therapy services">
-          <span>Individual Therapy</span>
-          <span>Couples Therapy</span>
-          <span>Family Therapy</span>
+      <section class="services section" aria-labelledby="services-title">
+        <h2 id="services-title">Our services</h2>
+        <div class="service-grid">
+          <article class="service-card">
+            <h3>Individual Therapy</h3>
+            <p>Personalized support for<br class="desktop-break"> emotional well-being.</p>
+          </article>
+          <article class="service-card">
+            <h3>Couples Therapy</h3>
+            <p>Build stronger<br class="desktop-break"> relationships and better<br class="desktop-break"> communication.</p>
+          </article>
+          <article class="service-card family-card">
+            <h3>Family Therapy</h3>
+            <p>Strengthen family bonds<br class="desktop-break"> and resolve conflicts.</p>
+          </article>
         </div>
       </section>
 
-      <!-- Proof -->
-      <section class="proof-grid" aria-label="Proof and trust indicators">
-        <div class="proof-item">3+ years of serving</div>
-        <div class="proof-item">Qualified Therapists</div>
-        <div class="proof-item">Client-Centered Care</div>
-      </section>
-
-      <a class="button" href="tel:+250794948271">Call us</a>
-
-      <div class="info-stack">
-        <section class="info-card" aria-label="Location">
-          <h3>Location</h3>
-          <p>
-            Kigali, Rwanda<br />
-            Nyarugenge District<br />
-            Kimisagara, near market
-          </p>
-        </section>
-
-        <section class="info-card" aria-label="Hours">
-          <h3>Hours</h3>
-          <p>
-            Monday - Friday<br />
-            8:00 AM - 18:00 PM<br /><br />
-            Saturday<br />
-            8:00 AM - 2:00 PM<br /><br />
-            Sunday<br />
-            Closed
-          </p>
-        </section>
-
-        <a class="button" href="tel:+250794948271">Call us</a>
-
-        <section class="contact-card" aria-label="Contact us">
-          <h3>Contact us</h3>
-          <p class="contact-row">Phone: +250 794 948 271</p>
-          <p class="contact-row">WhatsApp: +250 794 948 271</p>
-          <p class="contact-row">Email: gabatherapycenter@gmail.com</p>
-        </section>
-      </div>
-    </main>
-
-    <footer class="footer">
-      <div class="footer-inner">
-        <div class="footer-brand">
-          <img src="Assets/Logos/Logo_B.png" alt="GTC logo" class="footer-logo" />
-          <div class="subbrand">GABA THERAPY CENTER</div>
-        </div>
-
-        <div class="footer-links" aria-label="Quick links">
-          <h4>Quick Links</h4>
-          <a href="#">Home</a>
-          <a href="#">Services</a>
-          <a href="#">Contact us</a>
-          <a href="#">About us</a>
-        </div>
-
-        <div class="footer-call" aria-label="Call us section">
-          <h4>Call us on</h4>
-          <a class="phone" href="tel:+250794948271">+250 794 948 271</a>
-
-          <div class="socials" aria-label="Social media links">
-            <a href="#" aria-label="Instagram">
-              <img src="./Assets/Logos/instagram.png" alt="Instagram" />
-            </a>
-            <a href="#" aria-label="Facebook">
-              <img src="./Assets/Logos/facebook.png" alt="Facebook" />
-            </a>
+      <section class="specialists section" aria-labelledby="specialists-title">
+        <h2 id="specialists-title">Our specialists</h2>
+        <div class="specialist">
+          <img class="specialist-photo" src="assets/specialist.jpg" alt="Therapy specialist wearing green clinical scrubs">
+          <div class="specialist-details">
+            <h3>Dr. Sarah Mitchell</h3>
+            <p>Clinical Psychologist</p>
+            <p>Monday - Friday</p>
+            <p>8:00 AM - 19:30 PM</p>
           </div>
         </div>
-      </div>
-      
-      <div class="footer-line"></div>
-      <div class="copyright">@2026gabatherapycenter</div>
+        <div class="specialist-action">
+          <a class="call-button" href="tel:+250794948271">
+            <img src="assets/phone-call.png" alt="">
+            <span>Call us on phone</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="hours-section section" aria-labelledby="hours-title">
+        <h2 id="hours-title">Hours</h2>
+        <div class="hours-card">
+          <div class="hours-row"><span>Monday - Friday:</span><span>8:00 AM - 19:30 PM</span></div>
+          <div class="hours-row"><span>Saturday:</span><span>9:00 AM - 17:00 PM</span></div>
+          <div class="hours-row"><span>Sunday:</span><span>Closed</span></div>
+        </div>
+      </section>
+
+      <section class="contact-section section" aria-labelledby="contact-title">
+        <h2 id="contact-title">Contact us</h2>
+        <div class="contact-card">
+          <a class="contact-row" href="tel:+250794948271">
+            <img src="assets/phone-call.png" alt="">
+            <span>+250 794948271</span>
+          </a>
+          <a class="contact-row" href="https://wa.me/250794948271" target="_blank" rel="noopener noreferrer">
+            <img src="assets/whatsapp.png" alt="">
+            <span>+250 794948271</span>
+          </a>
+          <a class="contact-row" href="mailto:spescenter@gmail.com">
+            <img src="assets/envelope.png" alt="">
+            <span>spescenter@gmail.com</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>@2026spescenter</p>
     </footer>
-  </body>
+  </div>
+</body>
 </html>
